@@ -1,2 +1,25 @@
 hola mundo
 pruba 1
+#verical
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Inicializamos una lista vacía para almacenar el resultado del recorrido
+resultado = []
+
+# Recorremos la matriz en el orden deseado
+for columna in range(3):
+    for fila in range(3):
+        # Añadimos cada elemento al resultado
+        resultado.append(matriz[fila][columna])
+
+# Imprimimos el resultado
+print(resultado)
+
+
+
+
+#horizontal
