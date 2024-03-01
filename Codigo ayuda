@@ -23,3 +23,24 @@ print(resultado)
 
 
 #horizontal
+# Definir la matriz 3x3
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Inicializar una lista vacía para almacenar los elementos recorridos
+resultado = []
+
+# Recorrer la matriz en el orden especificado
+for i in range(3):
+    if i % 2 == 0:  # Si es una fila par, recorrer de izquierda a derecha
+        for j in range(3):
+            resultado.append(matriz[i][j])
+    else:  # Si es una fila impar, recorrer de derecha a izquierda
+        for j in range(2, -1, -1):
+            resultado.append(matriz[i][j])
+
+# Imprimir el resultado
+print(resultado)
